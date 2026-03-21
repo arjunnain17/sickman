@@ -28,10 +28,11 @@ from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 
 load_dotenv()
+load_dotenv(dotenv_path=Path(__file__).parent / ".env")
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
-EMBEDDING_MODEL  = "models/gemini-embedding-001"
+EMBEDDING_MODEL  = "gemini-embedding-001"
 LLM_MODEL        = "gemini-2.5-flash-lite"
 INDEX_DIR        = Path("faiss_index")
 FAISS_INDEX_NAME = "medical_rag"
