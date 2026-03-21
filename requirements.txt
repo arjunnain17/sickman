@@ -1,0 +1,6 @@
+openparse
+langchain-google-genai
+langchain-community
+faiss-cpu
+python-dotenv
+langchain-text-splitters
