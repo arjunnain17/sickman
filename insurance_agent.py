@@ -198,8 +198,10 @@ def _build_prompt(
 ) -> str:
     """Construct the prompt sent to Gemini."""
 
+# NEW
     findings_list = "\n".join(
-        f"  - {f.name} (value: {f.value}, flag: {f.flag})"
+        f"  - {f.name} | value: {f.value} | flag: {f.flag} | "
+        f"plain meaning: {f.plain_explanation}"
         for f in medical_output.findings
     )
 
@@ -227,6 +229,33 @@ Report date: {medical_output.report_date}
 ## Your task
 Analyse the policy and produce a structured InsuranceOutput object.
 
+## Reasoning approach — CRITICAL, follow this exactly
+Insurance policies cover CONDITIONS and TREATMENTS, not lab test names.
+You must reason from finding → condition → coverage. Follow this process
+for every single finding before checking the policy:
+
+Step 1 — Infer the condition:
+  - High Total Cholesterol + High LDL → Cardiovascular disease risk, dyslipidemia
+  - Low Haemoglobin → Anaemia, may need iron therapy or transfusion
+  - Abnormal WBC → Infection, immune disorder, may need hospitalization
+  - High Blood Glucose / Urine Glucose → Diabetes mellitus management
+  - High Creatinine / Urine Protein → Chronic kidney disease, renal treatment
+  - Abnormal Platelets → Bleeding disorder, haematology treatment
+  - Normal result (flag: "normal") → No condition to claim, skip coverage lookup
+
+Step 2 — Search the policy for that CONDITION or its TREATMENT:
+  - Look for the condition name, related procedures, hospitalization cover
+  - Check the Scope of Coverage, Inclusions, and Benefit Schedule sections
+  - A finding is only ❌ if the condition is EXPLICITLY EXCLUDED in the policy
+  - "Not mentioned by test name" is NOT the same as "not covered"
+
+Step 3 — Set covered_detail accordingly:
+  - If covered: "Covered as [condition] under Section X, max ₹Y/year"
+  - If normal: "No claim needed — result is within normal range"
+  - If genuinely excluded: "Excluded under Section X — [reason]"
+  - If policy is ambiguous: "Policy does not explicitly mention [condition].
+    Likely covered under general hospitalization. Verify with insurer."
+
 STRICT RULES:
 1. `coverage` must contain exactly one CoverageItem for EVERY finding listed above.
 2. `CoverageItem.finding_name` must be an exact character-for-character match of the
@@ -242,6 +271,11 @@ STRICT RULES:
    coverage details, pre-authorisation requirements, and claim procedures directly
    with your insurance provider or TPA before proceeding."
 7. Do not invent coverage amounts not present in the policy text.
+8. If finding.flag == "normal", always set covered=False and
+   coverage_detail="No claim needed — result is within normal range."
+   Do NOT look up coverage for normal findings.
+9. Never mark a finding as not covered just because the lab test name
+   doesn't appear in the policy. Always reason via the underlying condition.
 """
 
 
