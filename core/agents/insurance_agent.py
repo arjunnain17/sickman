@@ -323,7 +323,7 @@ def run_insurance_agent(
     prompt = _build_prompt(policy_markdown, medical_output, policy_context)
 
     llm = ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash-lite",
+        model="gemini-2.5-flash",
         temperature=0.1,
     )
     structured_llm = llm.with_structured_output(InsuranceOutput)

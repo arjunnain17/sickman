@@ -296,6 +296,10 @@ def main():
 
     print("\n✓ Ingestion complete. Ready for agents.\n")
 
+def run_ingest(
+    medical_dir: Path = Path(__file__).parent.parent / "data" / "medical",
+    insurance_dir: Path = Path(__file__).parent.parent / "data" / "insurance",
+):
 
-if __name__ == "__main__":
-    main()
+    if __name__ == "__main__":
+        run_ingest()
