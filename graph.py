@@ -106,93 +106,26 @@ def insurance_agent_node(state: AgentState) -> AgentState:
         }
 
 # ── Node 3: Document Builder ───────────────────────────────────────────────────
-# STUB — replace with Jinja2 template renderer when document_builder.py is built
+# Add import at top of graph.py
+from document_builder import build_document
 
+# Replace document_builder_node body
 def document_builder_node(state: AgentState) -> AgentState:
-    """
-    Merges MedicalOutput + InsuranceOutput into the final patient document.
-    Reads both outputs from state, writes state["final_document"].
-
-    TODO: Replace stub with:
-        from document_builder import build_document
-        doc = build_document(state["medical_output"], state["insurance_output"])
-        return {**state, "final_document": doc, "current_step": "done"}
-    """
-    print("\n[Orchestrator] → Running Document Builder (STUB) ...")
-
-    medical: MedicalOutput    = state["medical_output"]
-    insurance: InsuranceOutput = state["insurance_output"]
-
-    coverage_map = {
-        item.finding_name: item
-        for item in insurance.coverage
-    }
-
-    FLAG_ICONS = {"critical": "🔴", "monitor": "🟡", "normal": "🟢"}
-
-    lines = [
-        f"# Patient Medical Report",
-        f"**Patient:** {medical.patient_name}",
-        f"**Date:** {medical.report_date}",
-        f"**Physician:** {medical.attending_physician}",
-        f"\n---\n",
-        f"## Summary",
-        medical.summary,
-        f"\n---\n",
-        f"## Findings",
-    ]
-
-    for finding in medical.findings:
-        icon     = FLAG_ICONS.get(finding.flag, "⚪")
-        coverage = coverage_map.get(finding.name)
-        lines += [
-            f"\n### {icon} {finding.name}",
-            f"**Value:** {finding.value} (Reference: {finding.reference_range})",
-            f"**What this means:** {finding.plain_explanation}",
-            f"**Trend:** {finding.trend}",
-        ]
-        if coverage:
-            covered_text = "Covered" if coverage.covered else "Not covered"
-            lines += [
-                f"**Insurance:** {covered_text} — {coverage.coverage_detail}",
-                f"**Pre-auth required:** {'Yes' if coverage.pre_auth_required else 'No'}",
-            ]
-        else:
-            lines.append("**Insurance:** Not found in policy — contact your insurer.")
-
-    lines += [
-        f"\n---\n",
-        f"## Follow-up Actions",
-        *[f"- {action}" for action in medical.follow_up_actions],
-    ]
-
-    if medical.referrals:
-        lines += [
-            f"\n## Referrals",
-            *[f"- {ref}" for ref in medical.referrals],
-        ]
-
-    lines += [
-        f"\n---\n",
-        f"## How to Claim",
-        *[
-            f"{step.step_number}. {step.instruction} *(Deadline: {step.deadline})*"
-            for step in insurance.claim_steps
-        ],
-        f"\n**Documents required:** {', '.join(insurance.documents_required)}",
-        f"\n---\n",
-        f"*{medical.disclaimer}*",
-    ]
-
-    final_document = "\n".join(lines)
-    print("[Orchestrator] ✓ Document Builder complete")
-
-    return {
-        **state,
-        "final_document": final_document,
-        "current_step": "done",
-    }
-
+    print("\n[Orchestrator] → Running Document Builder ...")
+    try:
+        out_path = build_document(
+            medical=state["medical_output"],
+            insurance=state["insurance_output"],
+            output_path="final_report.pdf",
+        )
+        final_doc = str(out_path)
+        print(f"[Orchestrator] ✓ Document built → {final_doc}")
+        return {**state, "final_document": final_doc, "current_step": "done"}
+    except Exception as e:
+        error_msg = f"Document Builder failed: {str(e)}"
+        print(f"[Orchestrator] ✗ {error_msg}")
+        return {**state, "final_document": None, "current_step": "error",
+                "errors": state["errors"] + [error_msg]}
 
 # ── Node 4: Error Handler ──────────────────────────────────────────────────────
 
