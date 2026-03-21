@@ -1,0 +1,254 @@
+{
+  "current_report_path": "..\\sample_medical_report.pdf",
+  "policy_pdf_path": "data\\insurance\\insurer_grade_policy.pdf",
+  "medical_output": {
+    "patient_name": "Rajesh Kumar",
+    "report_date": "19-Jun-2025",
+    "attending_physician": "Unknown",
+    "summary": "This report shows several concerning health indicators, including high LDL cholesterol, high triglycerides, and low hemoglobin. The fasting glucose and HbA1c levels indicate uncontrolled diabetes, and kidney function tests are significantly abnormal. Please discuss these results with your doctor immediately as they require urgent medical attention.",
+    "findings": [
+      {
+        "name": "Total Cholesterol",
+        "value": "214 mg/dL",
+        "reference_range": "<200 mg/dL",
+        "flag": "critical",
+        "plain_explanation": "This test measures the total amount of cholesterol in your blood. High levels can increase your risk of heart disease. Your level is higher than the recommended limit.",
+        "trend": "↑ Higher than 26-Mar-2024 result (220 mg/dL), higher than 24-Jun-2024 result (228 mg/dL), higher than 30-Jun-2023 result (196 mg/dL), higher than 01-Apr-2023 result (188 mg/dL), higher than 01-Jan-2023 result (180 mg/dL)."
+      },
+      {
+        "name": "LDL",
+        "value": "134 mg/dL",
+        "reference_range": "<100 mg/dL",
+        "flag": "critical",
+        "plain_explanation": "This is often called 'bad' cholesterol. High levels can build up in your blood vessels and increase your risk of heart attack and stroke. Your level is higher than the recommended limit.",
+        "trend": "↑ Higher than 26-Mar-2024 result (180 mg/dL), higher than 24-Jun-2024 result (188 mg/dL), higher than 30-Jun-2023 result (156 mg/dL), higher than 01-Apr-2023 result (148 mg/dL), higher than 01-Jan-2023 result (140 mg/dL)."
+      },
+      {
+        "name": "HDL",
+        "value": "49 mg/dL",
+        "reference_range": ">50 mg/dL",
+        "flag": "monitor",
+        "plain_explanation": "This is often called 'good' cholesterol. It helps remove 'bad' cholesterol from your blood vessels. Your level is slightly lower than the recommended minimum.",
+        "trend": "↑ Higher than 26-Mar-2024 result (35 mg/dL), higher than 24-Jun-2024 result (34 mg/dL), higher than 30-Jun-2023 result (38 mg/dL), higher than 01-Apr-2023 result (39 mg/dL), higher than 01-Jan-2023 result (40 mg/dL). However, it is lower than the 19-Jun-2025 result (30 mg/dL)."
+      },
+      {
+        "name": "Triglycerides",
+        "value": "168 mg/dL",
+        "reference_range": "<150 mg/dL",
+        "flag": "critical",
+        "plain_explanation": "These are a type of fat found in your blood. High levels can increase your risk of heart disease and pancreatitis. Your level is higher than the recommended limit.",
+        "trend": "↑ Higher than 26-Mar-2024 result (50 mg/dL), higher than 24-Jun-2024 result (54 mg/dL), higher than 30-Jun-2023 result (38 mg/dL), higher than 01-Apr-2023 result (34 mg/dL), higher than 01-Jan-2023 result (30 mg/dL)."
+      },
+      {
+        "name": "Haemoglobin",
+        "value": "10.5 g/dL",
+        "reference_range": "12–16 g/dL",
+        "flag": "critical",
+        "plain_explanation": "This protein in your red blood cells carries oxygen throughout your body. A low level can mean you have anemia, which can cause fatigue and weakness. Your level is below the normal range.",
+        "trend": "↓ Lower than 26-Mar-2024 result (10.8 g/dL), lower than 24-Jun-2024 result (11.2 g/dL), lower than 30-Jun-2023 result (10.8 g/dL), lower than 01-Apr-2023 result (11.5 g/dL), lower than 01-Jan-2023 result (11.0 g/dL)."
+      },
+      {
+        "name": "WBC",
+        "value": "6.8 x10³/µL",
+        "reference_range": "4.0–11.0 x10³/µL",
+        "flag": "normal",
+        "plain_explanation": "These are your white blood cells, which fight infection. Your level is within the normal range.",
+        "trend": "Unchanged from 26-Mar-2024 result (6.8 x10³/µL), lower than 24-Jun-2024 result (7.2 x10³/µL), lower than 30-Jun-2023 result (7.5 x10³/µL), lower than 01-Apr-2023 result (7.0 x10³/µL), lower than 01-Jan-2023 result (6.8 x10³/µL)."
+      },
+      {
+        "name": "Platelets",
+        "value": "210 x10³/µL",
+        "reference_range": "150–400 x10³/µL",
+        "flag": "normal",
+        "plain_explanation": "These small cells help your blood to clot. Your level is within the normal range.",
+        "trend": "Unchanged from 26-Mar-2024 result (210 x10³/µL), lower than 24-Jun-2024 result (220 x10³/µL), lower than 30-Jun-2023 result (218 x10³/µL), lower than 01-Apr-2023 result (220 x10³/µL), lower than 01-Jan-2023 result (210 x10³/µL)."
+      },
+      {
+        "name": "Glucose",
+        "value": "Negative",
+        "reference_range": "Negative",
+        "flag": "normal",
+        "plain_explanation": "This test checks for sugar in your urine. Finding sugar in the urine can be a sign of diabetes or other kidney problems. It was not detected in your urine.",
+        "trend": "Unchanged from 26-Mar-2024 result (Negative), unchanged from 24-Jun-2024 result (Negative), unchanged from 30-Jun-2023 result (Negative), unchanged from 01-Apr-2023 result (Negative), unchanged from 01-Jan-2023 result (Negative)."
+      },
+      {
+        "name": "Protein",
+        "value": "Negative",
+        "reference_range": "Negative",
+        "flag": "normal",
+        "plain_explanation": "This test checks for protein in your urine. Protein in the urine can be a sign of kidney disease. It was not detected in your urine.",
+        "trend": "Unchanged from 26-Mar-2024 result (Negative), unchanged from 24-Jun-2024 result (Negative), unchanged from 30-Jun-2023 result (Negative), unchanged from 01-Apr-2023 result (Negative), unchanged from 01-Jan-2023 result (Negative)."
+      },
+      {
+        "name": "Fasting Glucose",
+        "value": "140 mg/dL",
+        "reference_range": "70-99 mg/dL",
+        "flag": "critical",
+        "plain_explanation": "This test measures the amount of sugar in your blood after fasting overnight. A high level can indicate diabetes or pre-diabetes. Your level is higher than the recommended range.",
+        "trend": "↑ Higher than 26-Mar-2024 result (135 mg/dL), higher than 24-Jun-2024 result (140 mg/dL), higher than 30-Jun-2023 result (120 mg/dL), higher than 01-Apr-2023 result (115 mg/dL), higher than 01-Jan-2023 result (110 mg/dL)."
+      },
+      {
+        "name": "HbA1c",
+        "value": "8.0 %",
+        "reference_range": "<5.7 %",
+        "flag": "critical",
+        "plain_explanation": "This test shows your average blood sugar levels over the past 2-3 months. A high level indicates poorly controlled diabetes. Your level is significantly higher than the recommended target.",
+        "trend": "↑ Higher than 26-Mar-2024 result (7.7 %), higher than 24-Jun-2024 result (8.0 %), higher than 30-Jun-2023 result (6.8 %), higher than 01-Apr-2023 result (6.5 %), higher than 01-Jan-2023 result (6.2 %)."
+      },
+      {
+        "name": "Creatinine",
+        "value": "2.5 mg/dL",
+        "reference_range": "0.7–1.3 mg/dL",
+        "flag": "critical",
+        "plain_explanation": "This test measures a waste product from muscle activity in your blood. High levels can indicate that your kidneys are not filtering waste properly. Your level is significantly higher than the normal range.",
+        "trend": "↑ Higher than 26-Mar-2024 result (1.75 mg/dL), higher than 24-Jun-2024 result (1.9 mg/dL), higher than 30-Jun-2023 result (1.3 mg/dL), higher than 01-Apr-2023 result (1.15 mg/dL), higher than 01-Jan-2023 result (1.0 mg/dL)."
+      },
+      {
+        "name": "Urea",
+        "value": "70 mg/dL",
+        "reference_range": "15-40 mg/dL",
+        "flag": "critical",
+        "plain_explanation": "This test measures a waste product found in your blood that is filtered by your kidneys. High levels can indicate that your kidneys are not working as well as they should. Your level is higher than the recommended range.",
+        "trend": "↑ Higher than 26-Mar-2024 result (50 mg/dL), higher than 24-Jun-2024 result (54 mg/dL), higher than 30-Jun-2023 result (38 mg/dL), higher than 01-Apr-2023 result (34 mg/dL), higher than 01-Jan-2023 result (30 mg/dL)."
+      }
+    ],
+    "follow_up_actions": [
+      "Schedule an urgent appointment with your doctor to discuss these critical results.",
+      "Discuss medication adjustments for diabetes and cholesterol management.",
+      "Follow up with your doctor regarding the low hemoglobin and potential causes.",
+      "Monitor blood pressure closely."
+    ],
+    "referrals": [
+      "Nephrology referral recommended due to critically elevated creatinine and urea.",
+      "Cardiology referral recommended due to critical lipid profile abnormalities.",
+      "Endocrinology referral recommended for diabetes management."
+    ],
+    "disclaimer": "This is an automated analysis and should not replace professional medical advice. Always consult with your healthcare provider for diagnosis and treatment."
+  },
+  "insurance_output": {
+    "policy_holder_name": "Rajesh Kumar",
+    "policy_number": "POL987654321",
+    "insurer_name": "MediCare Insurance Co.",
+    "coverage": [
+      {
+        "finding_name": "Total Cholesterol",
+        "covered": true,
+        "coverage_detail": "Covered as Dyslipidemia under Section 4.1, max ₹50,000/year",
+        "pre_auth_required": true,
+        "exclusions": "None"
+      },
+      {
+        "finding_name": "LDL",
+        "covered": true,
+        "coverage_detail": "Covered as Dyslipidemia under Section 4.1, max ₹50,000/year",
+        "pre_auth_required": true,
+        "exclusions": "None"
+      },
+      {
+        "finding_name": "HDL",
+        "covered": true,
+        "coverage_detail": "Covered as Dyslipidemia under Section 4.1, max ₹50,000/year",
+        "pre_auth_required": true,
+        "exclusions": "None"
+      },
+      {
+        "finding_name": "Triglycerides",
+        "covered": true,
+        "coverage_detail": "Covered as Dyslipidemia under Section 4.1, max ₹50,000/year",
+        "pre_auth_required": true,
+        "exclusions": "None"
+      },
+      {
+        "finding_name": "Haemoglobin",
+        "covered": true,
+        "coverage_detail": "Covered as Anaemia under Section 3.2, max ₹30,000/year",
+        "pre_auth_required": false,
+        "exclusions": "None"
+      },
+      {
+        "finding_name": "WBC",
+        "covered": false,
+        "coverage_detail": "No claim needed — result is within normal range",
+        "pre_auth_required": false,
+        "exclusions": "None"
+      },
+      {
+        "finding_name": "Platelets",
+        "covered": false,
+        "coverage_detail": "No claim needed — result is within normal range",
+        "pre_auth_required": false,
+        "exclusions": "None"
+      },
+      {
+        "finding_name": "Glucose",
+        "covered": false,
+        "coverage_detail": "No claim needed — result is within normal range",
+        "pre_auth_required": false,
+        "exclusions": "None"
+      },
+      {
+        "finding_name": "Protein",
+        "covered": false,
+        "coverage_detail": "No claim needed — result is within normal range",
+        "pre_auth_required": false,
+        "exclusions": "None"
+      },
+      {
+        "finding_name": "Fasting Glucose",
+        "covered": true,
+        "coverage_detail": "Covered as Diabetes Mellitus under Section 5.1, max ₹75,000/year",
+        "pre_auth_required": true,
+        "exclusions": "None"
+      },
+      {
+        "finding_name": "HbA1c",
+        "covered": true,
+        "coverage_detail": "Covered as Diabetes Mellitus under Section 5.1, max ₹75,000/year",
+        "pre_auth_required": true,
+        "exclusions": "None"
+      },
+      {
+        "finding_name": "Creatinine",
+        "covered": true,
+        "coverage_detail": "Covered as Chronic Kidney Disease under Section 6.1, max ₹1,00,000/year",
+        "pre_auth_required": true,
+        "exclusions": "None"
+      },
+      {
+        "finding_name": "Urea",
+        "covered": true,
+        "coverage_detail": "Covered as Chronic Kidney Disease under Section 6.1, max ₹1,00,000/year",
+        "pre_auth_required": true,
+        "exclusions": "None"
+      }
+    ],
+    "claim_steps": [
+      {
+        "step_number": 1,
+        "instruction": "Complete the claim form available on the insurer's website.",
+        "deadline": "Within 30 days of discharge"
+      },
+      {
+        "step_number": 2,
+        "instruction": "Submit the completed claim form along with all required documents to the TPA.",
+        "deadline": "Within 30 days of discharge"
+      },
+      {
+        "step_number": 3,
+        "instruction": "If pre-authorisation was required, ensure it was obtained before treatment.",
+        "deadline": "No fixed deadline"
+      }
+    ],
+    "documents_required": [
+      "Completed claim form",
+      "Original hospital discharge summary",
+      "Original bills and receipts",
+      "Doctor's prescription",
+      "All original investigation reports"
+    ],
+    "disclaimer": "This is an AI-generated summary for informational purposes only. Coverage determinations are subject to the full policy terms and conditions. Always verify coverage details, pre-authorisation requirements, and claim procedures directly with your insurance provider or TPA before proceeding."
+  },
+  "final_document": "# Patient Medical Report\n**Patient:** Rajesh Kumar\n**Date:** 19-Jun-2025\n**Physician:** Unknown\n\n---\n\n## Summary\nThis report shows several concerning health indicators, including high LDL cholesterol, high triglycerides, and low hemoglobin. The fasting glucose and HbA1c levels indicate uncontrolled diabetes, and kidney function tests are significantly abnormal. Please discuss these results with your doctor immediately as they require urgent medical attention.\n\n---\n\n## Findings\n\n### 🔴 Total Cholesterol\n**Value:** 214 mg/dL (Reference: <200 mg/dL)\n**What this means:** This test measures the total amount of cholesterol in your blood. High levels can increase your risk of heart disease. Your level is higher than the recommended limit.\n**Trend:** ↑ Higher than 26-Mar-2024 result (220 mg/dL), higher than 24-Jun-2024 result (228 mg/dL), higher than 30-Jun-2023 result (196 mg/dL), higher than 01-Apr-2023 result (188 mg/dL), higher than 01-Jan-2023 result (180 mg/dL).\n**Insurance:** Covered — Covered as Dyslipidemia under Section 4.1, max ₹50,000/year\n**Pre-auth required:** Yes\n\n### 🔴 LDL\n**Value:** 134 mg/dL (Reference: <100 mg/dL)\n**What this means:** This is often called 'bad' cholesterol. High levels can build up in your blood vessels and increase your risk of heart attack and stroke. Your level is higher than the recommended limit.\n**Trend:** ↑ Higher than 26-Mar-2024 result (180 mg/dL), higher than 24-Jun-2024 result (188 mg/dL), higher than 30-Jun-2023 result (156 mg/dL), higher than 01-Apr-2023 result (148 mg/dL), higher than 01-Jan-2023 result (140 mg/dL).\n**Insurance:** Covered — Covered as Dyslipidemia under Section 4.1, max ₹50,000/year\n**Pre-auth required:** Yes\n\n### 🟡 HDL\n**Value:** 49 mg/dL (Reference: >50 mg/dL)\n**What this means:** This is often called 'good' cholesterol. It helps remove 'bad' cholesterol from your blood vessels. Your level is slightly lower than the recommended minimum.\n**Trend:** ↑ Higher than 26-Mar-2024 result (35 mg/dL), higher than 24-Jun-2024 result (34 mg/dL), higher than 30-Jun-2023 result (38 mg/dL), higher than 01-Apr-2023 result (39 mg/dL), higher than 01-Jan-2023 result (40 mg/dL). However, it is lower than the 19-Jun-2025 result (30 mg/dL).\n**Insurance:** Covered — Covered as Dyslipidemia under Section 4.1, max ₹50,000/year\n**Pre-auth required:** Yes\n\n### 🔴 Triglycerides\n**Value:** 168 mg/dL (Reference: <150 mg/dL)\n**What this means:** These are a type of fat found in your blood. High levels can increase your risk of heart disease and pancreatitis. Your level is higher than the recommended limit.\n**Trend:** ↑ Higher than 26-Mar-2024 result (50 mg/dL), higher than 24-Jun-2024 result (54 mg/dL), higher than 30-Jun-2023 result (38 mg/dL), higher than 01-Apr-2023 result (34 mg/dL), higher than 01-Jan-2023 result (30 mg/dL).\n**Insurance:** Covered — Covered as Dyslipidemia under Section 4.1, max ₹50,000/year\n**Pre-auth required:** Yes\n\n### 🔴 Haemoglobin\n**Value:** 10.5 g/dL (Reference: 12–16 g/dL)\n**What this means:** This protein in your red blood cells carries oxygen throughout your body. A low level can mean you have anemia, which can cause fatigue and weakness. Your level is below the normal range.\n**Trend:** ↓ Lower than 26-Mar-2024 result (10.8 g/dL), lower than 24-Jun-2024 result (11.2 g/dL), lower than 30-Jun-2023 result (10.8 g/dL), lower than 01-Apr-2023 result (11.5 g/dL), lower than 01-Jan-2023 result (11.0 g/dL).\n**Insurance:** Covered — Covered as Anaemia under Section 3.2, max ₹30,000/year\n**Pre-auth required:** No\n\n### 🟢 WBC\n**Value:** 6.8 x10³/µL (Reference: 4.0–11.0 x10³/µL)\n**What this means:** These are your white blood cells, which fight infection. Your level is within the normal range.\n**Trend:** Unchanged from 26-Mar-2024 result (6.8 x10³/µL), lower than 24-Jun-2024 result (7.2 x10³/µL), lower than 30-Jun-2023 result (7.5 x10³/µL), lower than 01-Apr-2023 result (7.0 x10³/µL), lower than 01-Jan-2023 result (6.8 x10³/µL).\n**Insurance:** Not covered — No claim needed — result is within normal range\n**Pre-auth required:** No\n\n### 🟢 Platelets\n**Value:** 210 x10³/µL (Reference: 150–400 x10³/µL)\n**What this means:** These small cells help your blood to clot. Your level is within the normal range.\n**Trend:** Unchanged from 26-Mar-2024 result (210 x10³/µL), lower than 24-Jun-2024 result (220 x10³/µL), lower than 30-Jun-2023 result (218 x10³/µL), lower than 01-Apr-2023 result (220 x10³/µL), lower than 01-Jan-2023 result (210 x10³/µL).\n**Insurance:** Not covered — No claim needed — result is within normal range\n**Pre-auth required:** No\n\n### 🟢 Glucose\n**Value:** Negative (Reference: Negative)\n**What this means:** This test checks for sugar in your urine. Finding sugar in the urine can be a sign of diabetes or other kidney problems. It was not detected in your urine.\n**Trend:** Unchanged from 26-Mar-2024 result (Negative), unchanged from 24-Jun-2024 result (Negative), unchanged from 30-Jun-2023 result (Negative), unchanged from 01-Apr-2023 result (Negative), unchanged from 01-Jan-2023 result (Negative).\n**Insurance:** Not covered — No claim needed — result is within normal range\n**Pre-auth required:** No\n\n### 🟢 Protein\n**Value:** Negative (Reference: Negative)\n**What this means:** This test checks for protein in your urine. Protein in the urine can be a sign of kidney disease. It was not detected in your urine.\n**Trend:** Unchanged from 26-Mar-2024 result (Negative), unchanged from 24-Jun-2024 result (Negative), unchanged from 30-Jun-2023 result (Negative), unchanged from 01-Apr-2023 result (Negative), unchanged from 01-Jan-2023 result (Negative).\n**Insurance:** Not covered — No claim needed — result is within normal range\n**Pre-auth required:** No\n\n### 🔴 Fasting Glucose\n**Value:** 140 mg/dL (Reference: 70-99 mg/dL)\n**What this means:** This test measures the amount of sugar in your blood after fasting overnight. A high level can indicate diabetes or pre-diabetes. Your level is higher than the recommended range.\n**Trend:** ↑ Higher than 26-Mar-2024 result (135 mg/dL), higher than 24-Jun-2024 result (140 mg/dL), higher than 30-Jun-2023 result (120 mg/dL), higher than 01-Apr-2023 result (115 mg/dL), higher than 01-Jan-2023 result (110 mg/dL).\n**Insurance:** Covered — Covered as Diabetes Mellitus under Section 5.1, max ₹75,000/year\n**Pre-auth required:** Yes\n\n### 🔴 HbA1c\n**Value:** 8.0 % (Reference: <5.7 %)\n**What this means:** This test shows your average blood sugar levels over the past 2-3 months. A high level indicates poorly controlled diabetes. Your level is significantly higher than the recommended target.\n**Trend:** ↑ Higher than 26-Mar-2024 result (7.7 %), higher than 24-Jun-2024 result (8.0 %), higher than 30-Jun-2023 result (6.8 %), higher than 01-Apr-2023 result (6.5 %), higher than 01-Jan-2023 result (6.2 %).\n**Insurance:** Covered — Covered as Diabetes Mellitus under Section 5.1, max ₹75,000/year\n**Pre-auth required:** Yes\n\n### 🔴 Creatinine\n**Value:** 2.5 mg/dL (Reference: 0.7–1.3 mg/dL)\n**What this means:** This test measures a waste product from muscle activity in your blood. High levels can indicate that your kidneys are not filtering waste properly. Your level is significantly higher than the normal range.\n**Trend:** ↑ Higher than 26-Mar-2024 result (1.75 mg/dL), higher than 24-Jun-2024 result (1.9 mg/dL), higher than 30-Jun-2023 result (1.3 mg/dL), higher than 01-Apr-2023 result (1.15 mg/dL), higher than 01-Jan-2023 result (1.0 mg/dL).\n**Insurance:** Covered — Covered as Chronic Kidney Disease under Section 6.1, max ₹1,00,000/year\n**Pre-auth required:** Yes\n\n### 🔴 Urea\n**Value:** 70 mg/dL (Reference: 15-40 mg/dL)\n**What this means:** This test measures a waste product found in your blood that is filtered by your kidneys. High levels can indicate that your kidneys are not working as well as they should. Your level is higher than the recommended range.\n**Trend:** ↑ Higher than 26-Mar-2024 result (50 mg/dL), higher than 24-Jun-2024 result (54 mg/dL), higher than 30-Jun-2023 result (38 mg/dL), higher than 01-Apr-2023 result (34 mg/dL), higher than 01-Jan-2023 result (30 mg/dL).\n**Insurance:** Covered — Covered as Chronic Kidney Disease under Section 6.1, max ₹1,00,000/year\n**Pre-auth required:** Yes\n\n---\n\n## Follow-up Actions\n- Schedule an urgent appointment with your doctor to discuss these critical results.\n- Discuss medication adjustments for diabetes and cholesterol management.\n- Follow up with your doctor regarding the low hemoglobin and potential causes.\n- Monitor blood pressure closely.\n\n## Referrals\n- Nephrology referral recommended due to critically elevated creatinine and urea.\n- Cardiology referral recommended due to critical lipid profile abnormalities.\n- Endocrinology referral recommended for diabetes management.\n\n---\n\n## How to Claim\n1. Complete the claim form available on the insurer's website. *(Deadline: Within 30 days of discharge)*\n2. Submit the completed claim form along with all required documents to the TPA. *(Deadline: Within 30 days of discharge)*\n3. If pre-authorisation was required, ensure it was obtained before treatment. *(Deadline: No fixed deadline)*\n\n**Documents required:** Completed claim form, Original hospital discharge summary, Original bills and receipts, Doctor's prescription, All original investigation reports\n\n---\n\n*This is an automated analysis and should not replace professional medical advice. Always consult with your healthcare provider for diagnosis and treatment.*",
+  "current_step": "done",
+  "errors": []
+}

@@ -5,3 +5,4 @@ faiss-cpu
 python-dotenv
 langchain-text-splitters
 langchain_opendataloader_pdf
+langgraph 
