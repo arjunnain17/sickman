@@ -33,7 +33,7 @@ MEDICAL_DIR      = DATA_DIR / "medical"
 INSURANCE_DIR    = DATA_DIR / "insurance"
 INDEX_DIR        = Path("faiss_index")
 FAISS_INDEX_NAME = "medical_rag"
-EMBEDDING_MODEL  = "models/text-embedding-001"
+EMBEDDING_MODEL  = "models/gemini-embedding-001"
 
 # Chunk sizes tuned for medical/insurance content:
 # - 512 tokens keeps a full lab table + surrounding context together

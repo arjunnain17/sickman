@@ -1,0 +1,212 @@
+[
+  {
+    "preview": "Report Date: 01-Jan-2023  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 1
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Negative|Negative| |Protein|Negative|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 1
+  },
+  {
+    "preview": "Report Date: 01-Apr-2023  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 2
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Negative|Negative| |Protein|Negative|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 2
+  },
+  {
+    "preview": "Report Date: 30-Jun-2023  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 3
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Negative|Negative| |Protein|Negative|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 3
+  },
+  {
+    "preview": "Report Date: 28-Sep-2023  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 4
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Negative|Negative| |Protein|Negative|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 4
+  },
+  {
+    "preview": "Report Date: 27-Dec-2023  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 5
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Positive|Negative| |Protein|Negative|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 5
+  },
+  {
+    "preview": "Report Date: 26-Mar-2024  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 6
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Positive|Negative| |Protein|Negative|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 6
+  },
+  {
+    "preview": "Report Date: 24-Jun-2024  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 7
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Positive|Negative| |Protein|Negative|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 7
+  },
+  {
+    "preview": "Report Date: 22-Sep-2024  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 8
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Positive|Negative| |Protein|Negative|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 8
+  },
+  {
+    "preview": "Report Date: 21-Dec-2024  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 9
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Positive|Negative| |Protein|Trace|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 9
+  },
+  {
+    "preview": "Report Date: 21-Mar-2025  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 10
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Positive|Negative| |Protein|Trace|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 10
+  },
+  {
+    "preview": "Report Date: 19-Jun-2025  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 11
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Positive|Negative| |Protein|Trace|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 11
+  },
+  {
+    "preview": "Report Date: 17-Sep-2025  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 12
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Positive|Negative| |Protein|Trace|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 12
+  },
+  {
+    "preview": "Report Date: 16-Dec-2025  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 13
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Positive|Negative| |Protein|Trace|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 13
+  },
+  {
+    "preview": "Report Date: 16-Mar-2026  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 14
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Positive|Negative| |Protein|Trace|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 14
+  },
+  {
+    "preview": "Report Date: 14-Jun-2026  Patient: Rajesh Kumar Age/Gender: 52 / Male  Diabetes Panel  |Test|Result|Unit|Reference| |---|---|---|---| |Fasting Glucose",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 15
+  },
+  {
+    "preview": "Urine Analysis  |Test|Result|Reference| |---|---|---| |Glucose|Positive|Negative| |Protein|Trace|Negative|",
+    "is_table": true,
+    "source_type": "medical",
+    "file": "advanced_medical_reports.pdf",
+    "page": 15
+  }
+]
