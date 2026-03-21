@@ -23,8 +23,8 @@ from typing import TypedDict
 
 from langgraph.graph import StateGraph, END
 
-from medical_agent import run_medical_agent, MedicalOutput
-from insurance_agent import run_insurance_agent, InsuranceOutput
+from core.agents.medical_agent import run_medical_agent, MedicalOutput
+from core.agents.insurance_agent import run_insurance_agent, InsuranceOutput
 
 
 # ── Shared State ───────────────────────────────────────────────────────────────
@@ -107,7 +107,7 @@ def insurance_agent_node(state: AgentState) -> AgentState:
 
 # ── Node 3: Document Builder ───────────────────────────────────────────────────
 # Add import at top of graph.py
-from document_builder import build_document
+from core.agents.document_builder import build_document
 
 # Replace document_builder_node body
 def document_builder_node(state: AgentState) -> AgentState:
@@ -208,7 +208,7 @@ def run_pipeline(report_pdf_path: str | Path) -> AgentState:
                  final_document, and any errors
     """
 
-    insurance_dir = Path("data/insurance")
+    insurance_dir = Path(__file__).resolve().parent.parent / "data" / "insurance"
     policy_files = list(insurance_dir.glob("*.pdf"))
 
     if not policy_files:
@@ -256,13 +256,15 @@ if __name__ == "__main__":
 
     # Save final document
     if result["final_document"]:
-        out_path = Path("final_report.md")
+        ROOT = Path(__file__).resolve().parent.parent
+        out_path   = ROOT / "final_report.md"
+        state_path = ROOT / "pipeline_state.json"
         out_path.write_text(result["final_document"], encoding="utf-8")
         print(f"\n✓ Final report saved → {out_path}")
 
     # Save full state for debugging
     import json
-    state_path = Path("pipeline_state.json")
+    state_path = Path(__file__).resolve().parent.parent / "pipeline_state.json"
     serializable = {
         k: (v.model_dump() if hasattr(v, "model_dump") else v)
         for k, v in result.items()

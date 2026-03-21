@@ -28,14 +28,15 @@ load_dotenv()
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
-DATA_DIR         = Path("data")
+ROOT     = Path(__file__).resolve().parent.parent   # sickman/
+DATA_DIR = ROOT / "data"
+INDEX_DIR = ROOT / "faiss_index"
 MEDICAL_DIR      = DATA_DIR / "medical"
 INSURANCE_DIR    = DATA_DIR / "insurance"
-INDEX_DIR        = Path("faiss_index")
 FAISS_INDEX_NAME = "medical_rag"
 EMBEDDING_MODEL  = "gemini-embedding-001"
 
-# Chunk sizes tuned for medical/insurance content:
+# Chunk sizes tuned for medical/insurance content:  
 # - 512 tokens keeps a full lab table + surrounding context together
 # - 100 overlap ensures values at chunk boundaries aren't split from their labels
 CHUNK_SIZE    = 512

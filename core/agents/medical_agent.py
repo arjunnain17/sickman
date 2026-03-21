@@ -34,7 +34,7 @@ load_dotenv(dotenv_path=Path(__file__).parent / ".env")
 
 EMBEDDING_MODEL  = "gemini-embedding-001"
 LLM_MODEL        = "gemini-2.5-flash-lite"
-INDEX_DIR        = Path("faiss_index")
+INDEX_DIR = Path(__file__).resolve().parent.parent.parent / "faiss_index"
 FAISS_INDEX_NAME = "medical_rag"
 
 

@@ -36,8 +36,8 @@ from reportlab.platypus import (
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
-from medical_agent import MedicalOutput, FindingItem
-from insurance_agent import InsuranceOutput, CoverageItem
+from core.agents.medical_agent import MedicalOutput, FindingItem
+from core.agents.insurance_agent import InsuranceOutput, CoverageItem
 
 
 # ── Font registration ──────────────────────────────────────────────────────────

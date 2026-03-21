@@ -36,7 +36,7 @@ from langchain_opendataloader_pdf import OpenDataLoaderPDFLoader
 from pydantic import BaseModel, Field
 
 # Reuse MedicalOutput schema for the input contract
-from medical_agent import FindingItem, MedicalOutput
+from core.agents.medical_agent import FindingItem, MedicalOutput
 
 load_dotenv()
 
@@ -121,8 +121,12 @@ class InsuranceOutput(BaseModel):
 # Helpers
 # ---------------------------------------------------------------------------
 
-FAISS_INDEX_PATH = "faiss_index/medical_rag"  # same index, different filter
-OUTPUT_PATH = "insurance_output.json"
+FAISS_INDEX_PATH = str(
+    Path(__file__).resolve().parent.parent.parent / "faiss_index" / "medical_rag"
+)
+OUTPUT_PATH = str(
+    Path(__file__).resolve().parent.parent.parent / "output" / "insurance_output.json"
+)
 
 
 def _load_policy_markdown(pdf_path: str) -> str:
