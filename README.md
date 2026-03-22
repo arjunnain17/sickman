@@ -197,7 +197,7 @@ uvicorn api:app --reload --host 0.0.0.0 --port 8000
 Open Swagger UI at **http://localhost:8000/docs**
 
 <!-- SWAGGER SCREENSHOT — replace with your screenshot -->
-[Swagger UI](examples/example_image.png) 
+![Swagger UI](examples/example_image.png) 
 
 #### Endpoints
 
@@ -224,7 +224,7 @@ curl -X POST http://localhost:8000/analyze/download/pdf \
 ## Sample Output
 
 <!-- REPORT SCREENSHOT — replace with a screenshot of your generated PDF -->
-[Sample Report](example/pdf_example.png)
+![Sample Report](example/pdf_example.png)
 
 Each finding renders as a card with:
 - A coloured left stripe (🔴 red / 🟡 amber / 🟢 green)
