@@ -1,4 +1,4 @@
-# 🏥 Medical Report Simplifier
+# Sickman : A Medical Report Simplifier
 
 An AI-powered multi-agent system that reads a patient's medical report, compares it against past history, cross-references their insurance policy, and generates a single plain-English PDF a patient can actually understand.
 
