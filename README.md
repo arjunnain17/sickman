@@ -7,7 +7,7 @@ Built with LangGraph, Gemini, FAISS, OpenDataLoader, and FastAPI.
 ---
 
 <!-- DEMO GIF — replace with your recording -->
-[Demo](examples/example_demo.gif)
+![Demo](examples/example_demo.gif)
 
 ---
 
