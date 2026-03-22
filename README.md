@@ -224,7 +224,7 @@ curl -X POST http://localhost:8000/analyze/download/pdf \
 ## Sample Output
 
 <!-- REPORT SCREENSHOT — replace with a screenshot of your generated PDF -->
-![Sample Report](example/pdf_example.png)
+![Sample Report](examples/pdf_example.png)
 
 Each finding renders as a card with:
 - A coloured left stripe (🔴 red / 🟡 amber / 🟢 green)
