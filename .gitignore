@@ -10,6 +10,8 @@ medical_output.json
 insurance_output.json
 final_report.json
 output_reports/
+pipelines_state.json
+final_report.md
 
 # Python
 __pycache__/
@@ -45,5 +47,5 @@ desktop.ini
 logs/
 
 # Uploaded/test PDFs (patient data — never commit)
-data/
+data/   
 *.pdf

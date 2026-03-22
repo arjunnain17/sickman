@@ -7,3 +7,6 @@ langchain-text-splitters
 langchain_opendataloader_pdf
 langgraph 
 reportlab
+uvicorn
+fastapi
+python-multipart

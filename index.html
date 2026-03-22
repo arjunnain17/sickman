@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>MedClear — Medical Report Simplifier</title>
+<title>Sickman — Medical Report Simplifier</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
@@ -536,7 +536,7 @@ nav {
 <nav>
   <a class="logo" href="#">
     <div class="logo-mark">M</div>
-    MedClear
+    Sickman
   </a>
   <div class="nav-right">
     <span class="nav-pill version">api · :8000</span>
@@ -871,10 +871,10 @@ async function run() {
 
   try {
     const endpoint = API + (mode === 'pdf' ? '/analyze/download/pdf' : '/analyze');
-    console.log('[MedClear] POST', endpoint);
+    console.log('[Sickman] POST', endpoint);
     const res = await sfetch(endpoint, { method:'POST', body:form });
     clrT();
-    console.log('[MedClear] status', res.status);
+    console.log('[Sickman] status', res.status);
 
     if (!res.ok) {
       let msg = 'Server error ' + res.status;
@@ -900,7 +900,7 @@ async function run() {
 
   } catch(err) {
     clrT();
-    console.error('[MedClear]', err);
+    console.error('[Sickman]', err);
     showErr('Cannot reach ' + API + '\n\nCheck:\n1. uvicorn is running\n2. No CORS errors in browser DevTools (F12)\n3. Port matches\n\n' + err.message);
   } finally {
     document.getElementById('run-btn').disabled = false;
